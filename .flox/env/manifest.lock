@@ -1,0 +1,407 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "bash": {
+        "pkg-path": "bash"
+      },
+      "cowsay": {
+        "pkg-path": "cowsay"
+      },
+      "hello": {
+        "pkg-path": "hello"
+      }
+    },
+    "hook": {},
+    "profile": {},
+    "options": {
+      "systems": [
+        "aarch64-darwin",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "x86_64-linux"
+      ]
+    }
+  },
+  "packages": [
+    {
+      "attr_path": "bash",
+      "broken": false,
+      "derivation": "/nix/store/7l7c6d6as7x2nwfzb4236fjdm02mjs3c-bash-interactive-5.2p37.drv",
+      "description": "GNU Bourne-Again Shell, the de facto standard shell on Linux (for interactive use)",
+      "install_id": "bash",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "name": "bash-interactive-5.2p37",
+      "pname": "bash",
+      "rev": "7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "rev_count": 793418,
+      "rev_date": "2025-05-03T00:41:22Z",
+      "scrape_date": "2025-05-04T04:19:36.979440Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.2p37",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/1hbx0k930mf4pkb994x5dfgs7lcnsqq0-bash-interactive-5.2p37-dev",
+        "doc": "/nix/store/gyxhzxgh07pvqni8hbsls1bgzj1a2f8l-bash-interactive-5.2p37-doc",
+        "info": "/nix/store/m9ccdl3xgmk3dzz1lrvbw79sjq0dxdbh-bash-interactive-5.2p37-info",
+        "man": "/nix/store/q9gsfxm6w9awwahz0sj408bx5i22xzr5-bash-interactive-5.2p37-man",
+        "out": "/nix/store/gh2gn7xbqnahi44yd01xkv2vy172bg1v-bash-interactive-5.2p37"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "bash",
+      "broken": false,
+      "derivation": "/nix/store/6y93yh90w0x1z5d8vhrnkdsxsliydgwq-bash-interactive-5.2p37.drv",
+      "description": "GNU Bourne-Again Shell, the de facto standard shell on Linux (for interactive use)",
+      "install_id": "bash",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "name": "bash-interactive-5.2p37",
+      "pname": "bash",
+      "rev": "7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "rev_count": 793418,
+      "rev_date": "2025-05-03T00:41:22Z",
+      "scrape_date": "2025-05-04T04:37:43.633868Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.2p37",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/26zf7pim4zpwfjb95r8cchm7h93cz7mr-bash-interactive-5.2p37-debug",
+        "dev": "/nix/store/1vg484z3g5sv0lnmnag2ag4mj6fgsm4x-bash-interactive-5.2p37-dev",
+        "doc": "/nix/store/lnh49s60fcbncc18z5n9gvxaw64fjpcc-bash-interactive-5.2p37-doc",
+        "info": "/nix/store/f6ay4qmjndhsvqb82wr6vgckzfbri8xy-bash-interactive-5.2p37-info",
+        "man": "/nix/store/1mnhsigz5wnb5dq0v38nbfngfp83nxwa-bash-interactive-5.2p37-man",
+        "out": "/nix/store/86spmd2gg2v0v7zviqxh6y4jrs0zb37i-bash-interactive-5.2p37"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "bash",
+      "broken": false,
+      "derivation": "/nix/store/xyrdkzinhkcvd9l5jmbadhpaw750yzlh-bash-interactive-5.2p37.drv",
+      "description": "GNU Bourne-Again Shell, the de facto standard shell on Linux (for interactive use)",
+      "install_id": "bash",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "name": "bash-interactive-5.2p37",
+      "pname": "bash",
+      "rev": "7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "rev_count": 793418,
+      "rev_date": "2025-05-03T00:41:22Z",
+      "scrape_date": "2025-05-04T04:55:03.653532Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.2p37",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/241gc427lrqrnybd8j23wpc4sz28g12r-bash-interactive-5.2p37-dev",
+        "doc": "/nix/store/r6rpyfnqzzjw01q9khczbnhynf45ixjq-bash-interactive-5.2p37-doc",
+        "info": "/nix/store/m9g7v85kixxb6qaxys8v8hg14g68nwm3-bash-interactive-5.2p37-info",
+        "man": "/nix/store/pf0h950fa13szp0giihc2gd8vpwm91mi-bash-interactive-5.2p37-man",
+        "out": "/nix/store/wlkvcypggzncs98lnrl2ivywkiqqgjnw-bash-interactive-5.2p37"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "bash",
+      "broken": false,
+      "derivation": "/nix/store/rpyqrks23ipmcpmjl4242gmqk3v1z21j-bash-interactive-5.2p37.drv",
+      "description": "GNU Bourne-Again Shell, the de facto standard shell on Linux (for interactive use)",
+      "install_id": "bash",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "name": "bash-interactive-5.2p37",
+      "pname": "bash",
+      "rev": "7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "rev_count": 793418,
+      "rev_date": "2025-05-03T00:41:22Z",
+      "scrape_date": "2025-05-04T05:18:05.863430Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.2p37",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/92023r59a9v1nkgrqv9mayddd3233p45-bash-interactive-5.2p37-debug",
+        "dev": "/nix/store/9nrh5ga5dgz3f957w33iqzsfw2gkk5hq-bash-interactive-5.2p37-dev",
+        "doc": "/nix/store/1qbrlv6ll2sdrac04zpvb6hjvg30307y-bash-interactive-5.2p37-doc",
+        "info": "/nix/store/4rw0flfjd0xlis2yik8hz8izilsnxf1h-bash-interactive-5.2p37-info",
+        "man": "/nix/store/1z2p0d1sjd9gnfl049l61sy2qdd61dvb-bash-interactive-5.2p37-man",
+        "out": "/nix/store/m3hnxdlz6v6650ggqz29nsqbvzvdvnsy-bash-interactive-5.2p37"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cowsay",
+      "broken": false,
+      "derivation": "/nix/store/ys13y7zwily13rl8ga7dis4hw13g6b9w-cowsay-3.8.4.drv",
+      "description": "Program which generates ASCII pictures of a cow with a message",
+      "install_id": "cowsay",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "name": "cowsay-3.8.4",
+      "pname": "cowsay",
+      "rev": "7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "rev_count": 793418,
+      "rev_date": "2025-05-03T00:41:22Z",
+      "scrape_date": "2025-05-04T04:19:37.286550Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.8.4",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/b85anb1vpvb1j8ab6an3gfcqvrpi9kaz-cowsay-3.8.4-man",
+        "out": "/nix/store/38jwjk31qwkgvw71mgsmnq456z7a3czs-cowsay-3.8.4"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cowsay",
+      "broken": false,
+      "derivation": "/nix/store/m6hbjgd0m6iykyd9abl2670hrsgvdz4q-cowsay-3.8.4.drv",
+      "description": "Program which generates ASCII pictures of a cow with a message",
+      "install_id": "cowsay",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "name": "cowsay-3.8.4",
+      "pname": "cowsay",
+      "rev": "7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "rev_count": 793418,
+      "rev_date": "2025-05-03T00:41:22Z",
+      "scrape_date": "2025-05-04T04:37:44.007799Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.8.4",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/82ykdqlpzcjhq9hp73fj68giq5h7lwvk-cowsay-3.8.4-man",
+        "out": "/nix/store/m9m4p9svjqna6msx42mhd0nrpwkn73hy-cowsay-3.8.4"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cowsay",
+      "broken": false,
+      "derivation": "/nix/store/idjx2xkj5niqbc9zd5wdkfiyq8djmasl-cowsay-3.8.4.drv",
+      "description": "Program which generates ASCII pictures of a cow with a message",
+      "install_id": "cowsay",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "name": "cowsay-3.8.4",
+      "pname": "cowsay",
+      "rev": "7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "rev_count": 793418,
+      "rev_date": "2025-05-03T00:41:22Z",
+      "scrape_date": "2025-05-04T04:55:03.916485Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.8.4",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/ni4ab7gqg298f5a0g7fxn42x828p6zr2-cowsay-3.8.4-man",
+        "out": "/nix/store/5fv49m4p94q4ydav52zxx55r3n1yhxn4-cowsay-3.8.4"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cowsay",
+      "broken": false,
+      "derivation": "/nix/store/wdpicivrj0bmzh935rr1hm1vlk18j0mp-cowsay-3.8.4.drv",
+      "description": "Program which generates ASCII pictures of a cow with a message",
+      "install_id": "cowsay",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "name": "cowsay-3.8.4",
+      "pname": "cowsay",
+      "rev": "7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "rev_count": 793418,
+      "rev_date": "2025-05-03T00:41:22Z",
+      "scrape_date": "2025-05-04T05:18:06.266264Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.8.4",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/vi00a1s1xhl6p034d6nkkmy8zvanxbi2-cowsay-3.8.4-man",
+        "out": "/nix/store/xkk1gr9bw2dbdjna8391rj1zl1l3dmhq-cowsay-3.8.4"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "hello",
+      "broken": false,
+      "derivation": "/nix/store/i73phvv23dxc05czdz3069bk46q5ghm2-hello-2.12.1.drv",
+      "description": "Program that produces a familiar, friendly greeting",
+      "install_id": "hello",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "name": "hello-2.12.1",
+      "pname": "hello",
+      "rev": "7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "rev_count": 793418,
+      "rev_date": "2025-05-03T00:41:22Z",
+      "scrape_date": "2025-05-04T04:19:38.012129Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.12.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/rx1fzrw5bzj2cys6xk5av1v5c6ibh3cr-hello-2.12.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "hello",
+      "broken": false,
+      "derivation": "/nix/store/8ki4hqm7x69bw9inlfjblbx66zmh0m4m-hello-2.12.1.drv",
+      "description": "Program that produces a familiar, friendly greeting",
+      "install_id": "hello",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "name": "hello-2.12.1",
+      "pname": "hello",
+      "rev": "7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "rev_count": 793418,
+      "rev_date": "2025-05-03T00:41:22Z",
+      "scrape_date": "2025-05-04T04:37:45.603350Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.12.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/76plgdn1gbaxh0br5xbc6c7pmc3j6rmk-hello-2.12.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "hello",
+      "broken": false,
+      "derivation": "/nix/store/8zbk0zbw7whv42h3qsbx7c0bqhfy8q5z-hello-2.12.1.drv",
+      "description": "Program that produces a familiar, friendly greeting",
+      "install_id": "hello",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "name": "hello-2.12.1",
+      "pname": "hello",
+      "rev": "7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "rev_count": 793418,
+      "rev_date": "2025-05-03T00:41:22Z",
+      "scrape_date": "2025-05-04T04:55:04.677022Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.12.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/pmvrzc5w8wv71j1d2m74qfnjg81py437-hello-2.12.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "hello",
+      "broken": false,
+      "derivation": "/nix/store/iqbwkm8mjjjlmw6x6ry9rhzin2cp9372-hello-2.12.1.drv",
+      "description": "Program that produces a familiar, friendly greeting",
+      "install_id": "hello",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "name": "hello-2.12.1",
+      "pname": "hello",
+      "rev": "7a2622e2c0dbad5c4493cb268aba12896e28b008",
+      "rev_count": 793418,
+      "rev_date": "2025-05-03T00:41:22Z",
+      "scrape_date": "2025-05-04T05:18:08.012562Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.12.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/9bwryidal9q3g91cjm6xschfn4ikd82q-hello-2.12.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}

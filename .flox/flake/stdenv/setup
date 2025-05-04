@@ -1,0 +1,5 @@
+unset SHELL
+PATH=
+for p in $packages; do
+    export PATH=$p/bin:$PATH
+done
