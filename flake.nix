@@ -109,12 +109,13 @@
                 while [ "$pid" -ne 0 ]; do
                     new_shell=$(ps -p $pid -o comm= 2>/dev/null)
                     case "$new_shell" in
-                        bash|zsh|fish|sh|ksh|csh|tcsh) break ;;
+                        *bash|*zsh|*fish|*sh|*ksh|*csh|*tcsh) break ;;
                         *) : ;;
                     esac
                     pid=$(ps -p $pid -o ppid= 2>/dev/null | tr -d '[:space:]')
                     [ -z "$pid" ] && break
                 done
+                new_shell="''${new_shell#-}
                 "$new_shell"
                 echo shellHook exiting
               '';
