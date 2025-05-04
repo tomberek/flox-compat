@@ -7,14 +7,14 @@
       apps = builtins.mapAttrs (system: pkgs: {
         default = {
           type = "app";
-          program = ./run.sh;
+          program = ./.flox/flake/run.sh;
         };
       }) self.raw_packages_listing;
 
       # Process lockfile into a tree form
       raw_packages_listing =
         let
-          lock = builtins.fromJSON (builtins.readFile ../env/manifest.lock);
+          lock = builtins.fromJSON (builtins.readFile ./.flox/env/manifest.lock);
           pkgsBySystem = builtins.groupBy (x: x.system) lock.packages;
           pkgsBySystemAttrOutput = builtins.mapAttrs (
             system: pkgs:
@@ -76,7 +76,7 @@
       devShells = builtins.mapAttrs (system: pkgs: {
         default =
           let
-            getEnvSh = import ./get-env.sh.nix;
+            getEnvSh = import ./.flox/flake/get-env.sh.nix;
             arg = {
               name = "devshell";
               builder = "${
@@ -89,7 +89,7 @@
               }/bin/bash";
               inherit system;
               outputs = [ "out" ];
-              stdenv = ./stdenv;
+              stdenv = ./.flox/flake/stdenv;
               packages = [ pkgs.default ];
 
               # can append more context eg: argContext = builtins.getContext (toString derivationArg.args);
@@ -98,10 +98,10 @@
               shellHook = ''
                 echo shellHook startup
 
-                . <(nix eval --impure --expr 'let __div=x: y: y x; in ${../env}/manifest.toml / __readFile / builtins.fromTOML
+                . <(nix eval --impure --expr 'let __div=x: y: y x; in ${./.flox/env}/manifest.toml / __readFile / builtins.fromTOML
                      / (x: x.vars or {}) / __mapAttrs (k: v: "export k=\"''${v}\"" ) / __attrValues / __concatStringsSep "\n"' --raw)
 
-                . <(nix eval --impure --expr 'let __div=x: y: y x; in ${../env}/manifest.toml / __readFile / builtins.fromTOML
+                . <(nix eval --impure --expr 'let __div=x: y: y x; in ${./.flox/env}/manifest.toml / __readFile / builtins.fromTOML
                      / (x: x.hook.on-activate or "")' --raw)
 
                 # Find the parent shell

@@ -3,8 +3,8 @@ NIX_CONFIG=$(printf "%s\n" "experimental-features = nix-command flakes fetch-clo
 export NIX_CONFIG
 
 system=$(nix config show system)
-flake="${1-git+file://$PWD?dir=.flox/flake}"
-shift
+dir=$(CDPATH= cd -- "$(dirname -- "$0")"/../.. && pwd)
+flake="$dir"
 
 # Used to either substitute, fetch (using fetchClosure information), or build the packages from the manifest.lock
 # TODO: include out-links for better caching?
@@ -25,4 +25,4 @@ fetch_build
 
 echo "Starting SHELL: $SHELL"
 
-exec nix develop -L "$flake" -c "${@:-true}"
+exec nix develop -L "$flake#" -c "${@:-true}"
