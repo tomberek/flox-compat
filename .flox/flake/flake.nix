@@ -24,10 +24,10 @@
          shellHook = ''
              echo shellHook startup
 
-             . <(nix eval --impure --expr 'let __div=x: y: y x; in .flox/env/manifest.toml / __readFile / builtins.fromTOML
+             . <(nix eval --impure --expr 'let __div=x: y: y x; in ${../env}/manifest.toml / __readFile / builtins.fromTOML
                   / (x: x.vars or {}) / __mapAttrs (k: v: "export k=\"''${v}\"" ) / __attrValues / __concatStringsSep "\n"' --raw)
 
-             . <(nix eval --impure --expr 'let __div=x: y: y x; in .flox/env/manifest.toml / __readFile / builtins.fromTOML
+             . <(nix eval --impure --expr 'let __div=x: y: y x; in ${../env}/manifest.toml / __readFile / builtins.fromTOML
                   / (x: x.hook.on-activate or "")' --raw)
 
              # Find the parent shell
