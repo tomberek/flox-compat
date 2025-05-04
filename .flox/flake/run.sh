@@ -3,7 +3,7 @@ NIX_CONFIG=$(printf "%s\n" "experimental-features = nix-command flakes fetch-clo
 export NIX_CONFIG
 
 system=$(nix config show system)
-dir=$(CDPATH= cd -- "$(dirname -- "$0")"/../.. && pwd)
+dir=$(CDPATH='' cd -- "$(dirname -- "$0")"/../.. && pwd)
 flake="$dir"
 
 # Used to either substitute, fetch (using fetchClosure information), or build the packages from the manifest.lock
