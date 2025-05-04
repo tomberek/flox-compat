@@ -115,7 +115,7 @@
                     pid=$(ps -p $pid -o ppid= 2>/dev/null | tr -d '[:space:]')
                     [ -z "$pid" ] && break
                 done
-                new_shell="''${new_shell#-}
+                new_shell="''${new_shell#-}"
                 "$new_shell"
                 echo shellHook exiting
               '';
