@@ -13,9 +13,9 @@ fetch_build(){
   nix eval "$flake#.raw_packages_listing.$system." --apply 'x: builtins.concatStringsSep "\n" (map (x: builtins.concatStringsSep "\t" [x.path x.attr_path x.output] ) (builtins.attrValues x))' --raw | \
   {
     while IFS="	" read -r path attr output; do
-      nix build "$path"                                        --no-out-link || \
-      nix build "$flake#.packages.$system.$attr-$output"       --no-out-link || \
-      nix build "$flake#.build_packages.$system.$attr-$output" --no-out-link &
+      nix build "$path"                                        --no-link || \
+      nix build "$flake#.packages.$system.$attr-$output"       --no-link || \
+      nix build "$flake#.build_packages.$system.$attr-$output" --no-link &
     done
     wait
   }
