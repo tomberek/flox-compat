@@ -13,16 +13,16 @@
         "pkg-path": "hello"
       }
     },
-    "hook": {},
-    "profile": {},
-    "options": {
-      "systems": [
-        "aarch64-darwin",
-        "aarch64-linux",
-        "x86_64-darwin",
-        "x86_64-linux"
-      ]
-    }
+    "vars": {
+      "INTRO_MESSAGE": "It's gettin' Flox in here"
+    },
+    "hook": {
+      "on-activate": "echo \"Hello from Flox! on-activate\"\n"
+    },
+    "profile": {
+      "common": "echo \"Hello from Flox! profile\"\n"
+    },
+    "options": {}
   },
   "packages": [
     {
